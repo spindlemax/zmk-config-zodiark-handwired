@@ -7,6 +7,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "zodiark-layouts.dtsi"
 
+&physical_layout0 {
+    transform = <&default_transform>;
+};
+
 / {
     chosen {
         zephyr,display = &oled;
