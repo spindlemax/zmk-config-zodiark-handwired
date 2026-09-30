@@ -4,8 +4,7 @@
     zodiark_layout: zodiark_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
-        kscan = <&kscan0>;
-        transform = <&default_transform0>;
+
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   53       0     0     0>
