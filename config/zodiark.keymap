@@ -14,7 +14,7 @@
 #define ARROW 2 
 #define FKEY 3
 
-&studio_unlock
+
 
 / {
     keymap {
