@@ -56,22 +56,46 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        raise_layer {
+        ARROW_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR  | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                                  |      |       |       |      |       | RESET |
-// |       |     |     |      |      |      |        |                 |       |      |       |       |      |       |BLOADER|
+// |       |     |     |      |      |      |Studio  |                 |       |      |       |       |      |       |BLOADER|
 // |       |     |     |      |      |      |        |                 |       |      |       |       |      |       |       |
 // |       |     |     |      |      |      |        |       | |       |       |      |       |       |      |       |       |
 // |       |     |     |      |      |               |       | |       |              |       |       |      |       |       |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &trans &trans &trans &trans &trans &sys_reset
-&trans   &trans        &trans        &trans       &trans      &trans  &trans                 &trans  &trans &trans &trans &trans &trans &bootloader
+&trans   &trans        &trans        &trans       &trans      &trans  &studio_unlock         &trans  &trans &trans &trans &trans &trans &bootloader
 &trans   &trans        &trans        &trans       &trans      &trans  &trans                 &trans  &trans &trans &trans &trans &trans &trans
 &trans   &trans        &trans        &trans       &trans      &trans  &trans &trans  &trans  &trans  &trans &trans &trans &trans &trans &trans
 &trans   &trans        &trans        &trans       &trans         &trans      &trans  &trans      &trans     &trans &trans &trans &trans &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+        FKEY_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |       |     |     |      |      |      |                                  |      |       |       |      |       |       |
+// |       |     |     |      |      |      |        |                 |       |      |       |       |      |       |       |
+// |       |     |     |      |      |      |        |                 |       |      |       |       |      |       |       |
+// |       |     |     |      |      |      |        |       | |       |       |      |       |       |      |       |       |
+// |       |     |     |      |      |               |       | |       |              |       |       |      |       |       |
+            bindings = <
+&trans   &trans        &trans        &trans       &trans      &trans                                 &trans &trans &trans &trans &trans &sys_reset
+&trans   &trans        &trans        &trans       &trans      &trans  &trans         &trans  &trans &trans &trans &trans &trans &bootloader
+&trans   &trans        &trans        &trans       &trans      &trans  &trans                 &trans  &trans &trans &trans &trans &trans &trans
+&trans   &trans        &trans        &trans       &trans      &trans  &trans &trans  &trans  &trans  &trans &trans &trans &trans &trans &trans
+&trans   &trans        &trans        &trans       &trans         &trans      &trans  &trans      &trans     &trans &trans &trans &trans &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
         };
     };
 };
