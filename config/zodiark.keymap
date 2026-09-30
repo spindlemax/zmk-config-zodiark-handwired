@@ -14,6 +14,7 @@
 #define ARROW 2 
 #define FKEY 3
 
+&studio_unlock
 
 / {
     keymap {
@@ -48,7 +49,7 @@
 &trans     &kp F1    &kp F2    &kp F3     &kp F4      &kp F5                                   &kp F6   &kp F7   &kp F8    &kp F9      &kp F10    &trans
 &trans     &trans    &kp N7    &kp N8     &kp N9      &kp EQUAL   &trans                 &trans   &trans   &trans   &trans    &kp F11     &kp F12    &trans
 &trans     &trans    &kp N4    &kp N5     &kp N6      &kp MINUS   &trans                 &trans   &trans   &kp LEFT &kp UP    &kp DOWN    &kp RIGHT  &trans
-&trans     &trans    &kp N1    &kp N2     &kp N3      &kp KP_PLUS &trans &trans  &trans  &trans   &trans   &kp HOME &kp PG_UP &kp PG_DOWN &kp END    &trans
+&trans     &trans    &kp N1    &kp N2     &kp N3      &kp KP_PLUS &trans &trans  &trans  &trans   &trans   &kp HOME &kp PG_UP &kp PG_DN   &kp END    &trans
 &trans     &trans    &kp N0    &kp DOT    &kp KP_MULTIPLY         &trans &trans  &trans  &trans            &trans   &trans    &trans      &trans     &trans
             >;
 
