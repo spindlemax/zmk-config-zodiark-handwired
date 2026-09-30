@@ -1,3 +1,4 @@
+#include <physical_layouts.dtsi>
 / {
     zodiark_layout: zodiark_layout {
         compatible = "zmk,physical-layout";
