@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    zodiark_layout: zodiark_layout {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
